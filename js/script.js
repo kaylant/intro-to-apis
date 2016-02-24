@@ -33,10 +33,17 @@ $.getJSON('http://openstates.org/api/v1/legislators/?state=nd&apikey=cb1afb855f3
     containerEl.innerHTML += htmlString 
 	}
 
-	// var searchDistrict = function(e) {
-	// // if (e.keyCode === 13){
-	// // alert("woot")
-	// // }
+})
+
+var searchFunction = function(e) {
+	if (e.keyCode === 13){
+		alert("gross!")
+	}
+}
+
+inputEl.addEventListener('keydown',searchFunction)
+
+
 	// 	if (e.keyCode === 13) {
 		
 	// 	var sameDistrict = []
@@ -54,8 +61,4 @@ $.getJSON('http://openstates.org/api/v1/legislators/?state=nd&apikey=cb1afb855f3
 	//     return sameDistrict
 	// 	}
  // 	}
-
-	// inputEl.addEventListener('keydown',searchDistrict)
-
-})
 
