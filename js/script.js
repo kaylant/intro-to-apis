@@ -10,8 +10,13 @@ $.getJSON('http://openstates.org/api/v1/legislators/?state=nd&apikey=cb1afb855f3
 
 	for(var i = 0; i < dataFromApi.length; i++){
     var legislatorObj = dataFromApi[i]
-//    console.log(legislatorObj)
+console.log(legislatorObj)
 	var phoneNo = legislatorObj.offices[0].phone
+
+	if(phoneNo === null) {
+		phoneNo = "bitch, i don't give out my number to just anyone"
+	}
+
 	var email = legislatorObj.offices[0].email
 	var url = legislatorObj.offices[0]['+url']
 	var state = legislatorObj.state.toUpperCase()
