@@ -1,0 +1,49 @@
+body {
+	background-image: url("http://1.bp.blogspot.com/-Z9Ur6dE8jOo/TsFkY2hqWNI/AAAAAAAABG8/1TvGZsJyhB0/s1600/Bald-Eagle-And-American-Flag.jpg");
+	background-repeat: repeat;
+}
+
+#wrapper {
+	margin: 0;
+	text-align: center;
+}
+
+h1 {
+	font-family: Arial,sans-serif;
+	text-align: center;
+	color: white;
+	background-color: blue;
+}
+
+.legislatorContainer {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	padding: 10px;
+	color: white;
+	margin: 1%;
+	width: 33%;
+	border: 2px solid #ddd;
+	background: gray;
+	font-family: Arial,sans-serif;
+	position: relative;
+}
+
+.imgContainer {
+	position: absolute;
+	margin: 5px;
+	top: 5px;
+	right: 5px;
+}
+
+img {
+	border: 5px solid blue;
+	width: 100px;
+}
+
+#search {
+	margin: auto;
+	text-align: center;
+}
+
+add
